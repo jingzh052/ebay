@@ -1,3 +1,6 @@
+import numpy as np 
+from sklearn.metrics.cluster._supervised import contingency_matrix, check_clusterings
+
 def pair_confusion_matrix(labels_true, labels_pred):
     """Pair confusion matrix arising from two clusterings.
     The pair confusion matrix :math:`C` computes a 2 by 2 similarity matrix
