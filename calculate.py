@@ -50,7 +50,7 @@ def pair_confusion_matrix(labels_true, labels_pred):
 
     # Computation using the contingency data
     contingency = contingency_matrix(
-        labels_true, labels_pred, sparse=True, dtype=np.int64
+        labels_true, labels_pred, sparse=True
     )
     n_c = np.ravel(contingency.sum(axis=1))
     n_k = np.ravel(contingency.sum(axis=0))
